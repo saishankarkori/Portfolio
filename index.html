@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudhir's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Kori Saishankar</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Kori Saishankar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.jpeg" style="border-radius: 50%;" alt="profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Kori Saishankar</h1>
+      <p class="section__text__p2">Engineering Student</p>
+      <div class="btn-container">
+        <!-- <button class="btn btn-color-2" onclick="window.open('./assets/SudhirKadam_InternshalaResume-4.pdf')">
+          Download CV
+        </button> -->
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/sai-s-kori-02b52825a/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/saishankarkori'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <!-- <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div> -->
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <!-- <img src="./assets/experience.png" alt="Experience icon" class="icon" /> -->
+            <h3>Experience</h3>
+            <p>Fresher</p>
+          </div>
+          <div class="details-container">
+            <!-- <img src="./assets/education.png" alt="Education icon" class="icon" /> -->
+            <h3>Education</h3>
+            <p>Pursuing B.E. in Computer Engineering JSPM, Wagholi</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Hello! I am a dedicated and hardworking individual currently pursuing my third year in Computer Engineering
+            at JSPM's BSIOTR in Wagholi, Pune. I laid the foundation of my academic journey at Sadhana High School, Gadhinglaj where I completed my 10th grade with an impressive score of 89.8%. Continuing my pursuit of
+            excellence, I completed my 12th from Sai international Jr. College, Gadhinglaj with a remarkable score of 85% in my 12th
+            grade. My academic achievements reflect my commitment to learning and growth. Beyond academics, my interests
+            extend to reading geographical books, fueling my curiosity about the world. Strengths such as hard work,
+            negotiation, adaptability, time management, and effective communication have been integral to my personal
+            and professional development. However, I recognize the need to balance hard work with working smart,
+            acknowledging it as an area for improvement. I am excited to bring my skills and passion for technology to
+            future endeavors and contribute meaningfully to the ever-evolving field of computer engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Beginer</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Other</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MYSQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Beginer</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Beginer</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Beginer</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="https://media.licdn.com/dms/image/C5612AQHXpElnKlgFTA/article-cover_image-shrink_600_2000/0/1631271495780?e=2147483647&v=beta&t=G-v2giaPyk2MRBprIyIvJ5voiKmuq89bEH9F-MhPYak"
+              alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Hospital Management System</h2>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container" style="margin-top: 50px;">
+            <img src="https://repository-images.githubusercontent.com/198449440/7ae61300-a6a3-11ea-8701-88d936cf2dfe" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Tourist Website</h2>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="saishankar2002@gmail.com">saishankar2002@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <p>+91 9860908358</p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/sai-s-kori-02b52825a/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
